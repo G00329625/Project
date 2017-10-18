@@ -1,0 +1,448 @@
+Microsoft Windows [Version 10.0.14393]
+(c) 2016 Microsoft Corporation. All rights reserved.
+
+C:\Windows\system32>cd c:\Python27
+
+c:\Python27>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 78E4-864A
+
+ Directory of c:\Python27
+
+10/18/2017  03:31 PM    <DIR>          .
+10/18/2017  03:31 PM    <DIR>          ..
+10/18/2017  03:29 PM             9,813 car.jpg
+10/18/2017  02:13 PM    <DIR>          DLLs
+10/18/2017  02:13 PM    <DIR>          Doc
+10/18/2017  02:47 PM            12,537 ez_setup.py
+10/18/2017  03:05 PM         1,595,408 get-pip.py
+10/18/2017  02:13 PM    <DIR>          include
+10/18/2017  03:15 PM    <DIR>          Lib
+10/18/2017  02:13 PM    <DIR>          libs
+05/15/2013  10:53 PM            40,098 LICENSE.txt
+10/18/2017  02:15 PM            63,854 matplotlib-wininst.log
+05/15/2013  10:41 PM           359,882 NEWS.txt
+10/18/2017  03:16 PM             9,361 np.jpg
+10/18/2017  02:14 PM           100,968 numpy-wininst.log
+05/15/2013  10:43 PM            26,624 python.exe
+05/15/2013  10:43 PM            27,136 pythonw.exe
+05/15/2013  10:41 PM            54,979 README.txt
+10/18/2017  02:14 PM           196,096 Removematplotlib.exe
+10/18/2017  02:14 PM           196,096 Removenumpy.exe
+10/18/2017  03:06 PM    <DIR>          Scripts
+10/18/2017  02:49 PM           702,770 setuptools-33.1.1.zip
+10/18/2017  02:13 PM    <DIR>          tcl
+10/18/2017  03:31 PM               507 test1.py
+10/18/2017  03:31 PM               507 test2.py
+10/18/2017  02:13 PM    <DIR>          Tools
+05/15/2013  10:43 PM            49,664 w9xpopen.exe
+              17 File(s)      3,446,300 bytes
+              10 Dir(s)  128,518,832,128 bytes free
+
+c:\Python27>git init
+Initialized empty Git repository in c:/Python27/.git/
+
+c:\Python27>git add test1.py
+
+c:\Python27>git add test2.py
+
+c:\Python27>git add np.jpg
+
+c:\Python27>git add car.jpg
+
+c:\Python27>git commit
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'joe@DESKTOP-FG84KEB.(none)')
+
+c:\Python27>git commit -m "initial commit"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'joe@DESKTOP-FG84KEB.(none)')
+
+c:\Python27>git config --global user.email "G00329625@local"
+
+c:\Python27>git config --global user.name "G00329625"
+
+c:\Python27>git commit -m "initial commit"
+[master (root-commit) 8a84090] initial commit
+ 4 files changed, 46 insertions(+)
+ create mode 100644 car.jpg
+ create mode 100644 np.jpg
+ create mode 100644 test1.py
+ create mode 100644 test2.py
+
+c:\Python27>git remote /?
+error: Unknown subcommand: /?
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+
+c:\Python27>git remote add origin https://github.com/G00329625/Project.git
+
+c:\Python27>git add test1.py
+
+c:\Python27>git add test2.py
+
+c:\Python27>git commit
+On branch master
+Untracked files:
+        DLLs/
+        Doc/
+        LICENSE.txt
+        Lib/
+        NEWS.txt
+        README.txt
+        Removematplotlib.exe
+        Removenumpy.exe
+        Scripts/
+        Tools/
+        ez_setup.py
+        get-pip.py
+        include/
+        libs/
+        matplotlib-wininst.log
+        numpy-wininst.log
+        python.exe
+        pythonw.exe
+        setuptools-33.1.1.zip
+        tcl/
+        w9xpopen.exe
+
+nothing added to commit but untracked files present
+
+c:\Python27>git statis
+git: 'statis' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+c:\Python27>git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        DLLs/
+        Doc/
+        LICENSE.txt
+        Lib/
+        NEWS.txt
+        README.txt
+        Removematplotlib.exe
+        Removenumpy.exe
+        Scripts/
+        Tools/
+        ez_setup.py
+        get-pip.py
+        include/
+        libs/
+        matplotlib-wininst.log
+        numpy-wininst.log
+        python.exe
+        pythonw.exe
+        setuptools-33.1.1.zip
+        tcl/
+        w9xpopen.exe
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+c:\Python27>git push origin master
+To https://github.com/G00329625/Project.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/G00329625/Project.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+c:\Python27>git push --help
+
+c:\Python27>mkdir repo
+
+c:\Python27>cd repo
+
+c:\Python27\repo>git init
+Initialized empty Git repository in c:/Python27/repo/.git/
+
+c:\Python27\repo>git remote pull origin master
+error: Unknown subcommand: pull
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+
+c:\Python27\repo>git checkout --help
+
+c:\Python27\repo>git fetch
+fatal: No remote repository specified.  Please, specify either a URL or a
+remote name from which new revisions should be fetched.
+
+c:\Python27\repo>git remote add origin https://github.com/G00329625/Project.git
+
+c:\Python27\repo>git fetch
+remote: Counting objects: 9, done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 9 (delta 0), reused 3 (delta 0), pack-reused 6
+Unpacking objects: 100% (9/9), done.
+From https://github.com/G00329625/Project
+ * [new branch]      master     -> origin/master
+
+c:\Python27\repo>ls
+'ls' is not recognized as an internal or external command,
+operable program or batch file.
+
+c:\Python27\repo>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 78E4-864A
+
+ Directory of c:\Python27\repo
+
+10/18/2017  04:12 PM    <DIR>          .
+10/18/2017  04:12 PM    <DIR>          ..
+               0 File(s)              0 bytes
+               2 Dir(s)  128,511,610,880 bytes free
+
+c:\Python27\repo>cd ..
+
+c:\Python27>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 78E4-864A
+
+ Directory of c:\Python27
+
+10/18/2017  04:12 PM    <DIR>          .
+10/18/2017  04:12 PM    <DIR>          ..
+10/18/2017  03:29 PM             9,813 car.jpg
+10/18/2017  02:13 PM    <DIR>          DLLs
+10/18/2017  02:13 PM    <DIR>          Doc
+10/18/2017  02:47 PM            12,537 ez_setup.py
+10/18/2017  03:05 PM         1,595,408 get-pip.py
+10/18/2017  02:13 PM    <DIR>          include
+10/18/2017  03:15 PM    <DIR>          Lib
+10/18/2017  02:13 PM    <DIR>          libs
+05/15/2013  10:53 PM            40,098 LICENSE.txt
+10/18/2017  02:15 PM            63,854 matplotlib-wininst.log
+05/15/2013  10:41 PM           359,882 NEWS.txt
+10/18/2017  03:16 PM             9,361 np.jpg
+10/18/2017  02:14 PM           100,968 numpy-wininst.log
+05/15/2013  10:43 PM            26,624 python.exe
+05/15/2013  10:43 PM            27,136 pythonw.exe
+05/15/2013  10:41 PM            54,979 README.txt
+10/18/2017  02:14 PM           196,096 Removematplotlib.exe
+10/18/2017  02:14 PM           196,096 Removenumpy.exe
+10/18/2017  04:12 PM    <DIR>          repo
+10/18/2017  03:06 PM    <DIR>          Scripts
+10/18/2017  02:49 PM           702,770 setuptools-33.1.1.zip
+10/18/2017  02:13 PM    <DIR>          tcl
+10/18/2017  03:31 PM               507 test1.py
+10/18/2017  03:31 PM               507 test2.py
+10/18/2017  02:13 PM    <DIR>          Tools
+05/15/2013  10:43 PM            49,664 w9xpopen.exe
+              17 File(s)      3,446,300 bytes
+              11 Dir(s)  128,511,610,880 bytes free
+
+c:\Python27>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 78E4-864A
+
+ Directory of c:\Python27
+
+10/18/2017  04:12 PM    <DIR>          .
+10/18/2017  04:12 PM    <DIR>          ..
+10/18/2017  03:29 PM             9,813 car.jpg
+10/18/2017  02:13 PM    <DIR>          DLLs
+10/18/2017  02:13 PM    <DIR>          Doc
+10/18/2017  02:47 PM            12,537 ez_setup.py
+10/18/2017  03:05 PM         1,595,408 get-pip.py
+10/18/2017  02:13 PM    <DIR>          include
+10/18/2017  03:15 PM    <DIR>          Lib
+10/18/2017  02:13 PM    <DIR>          libs
+05/15/2013  10:53 PM            40,098 LICENSE.txt
+10/18/2017  02:15 PM            63,854 matplotlib-wininst.log
+05/15/2013  10:41 PM           359,882 NEWS.txt
+10/18/2017  03:16 PM             9,361 np.jpg
+10/18/2017  02:14 PM           100,968 numpy-wininst.log
+05/15/2013  10:43 PM            26,624 python.exe
+05/15/2013  10:43 PM            27,136 pythonw.exe
+05/15/2013  10:41 PM            54,979 README.txt
+10/18/2017  02:14 PM           196,096 Removematplotlib.exe
+10/18/2017  02:14 PM           196,096 Removenumpy.exe
+10/18/2017  04:12 PM    <DIR>          repo
+10/18/2017  03:06 PM    <DIR>          Scripts
+10/18/2017  02:49 PM           702,770 setuptools-33.1.1.zip
+10/18/2017  02:13 PM    <DIR>          tcl
+10/18/2017  03:31 PM               507 test1.py
+10/18/2017  03:31 PM               507 test2.py
+10/18/2017  02:13 PM    <DIR>          Tools
+05/15/2013  10:43 PM            49,664 w9xpopen.exe
+              17 File(s)      3,446,300 bytes
+              11 Dir(s)  128,511,496,192 bytes free
+
+c:\Python27>cd repo
+
+c:\Python27\repo>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 78E4-864A
+
+ Directory of c:\Python27\repo
+
+10/18/2017  04:12 PM    <DIR>          .
+10/18/2017  04:12 PM    <DIR>          ..
+               0 File(s)              0 bytes
+               2 Dir(s)  128,511,496,192 bytes free
+
+c:\Python27\repo>dir /ah
+ Volume in drive C has no label.
+ Volume Serial Number is 78E4-864A
+
+ Directory of c:\Python27\repo
+
+10/18/2017  04:15 PM    <DIR>          .git
+               0 File(s)              0 bytes
+               1 Dir(s)  128,511,496,192 bytes free
+
+c:\Python27\repo>git checkout origin
+error: pathspec 'origin' did not match any file(s) known to git.
+
+c:\Python27\repo>git checkout master
+Already on 'master'
+Branch master set up to track remote branch master from origin.
+
+c:\Python27\repo>git fetch origin
+
+c:\Python27\repo>git checkout
+Your branch is up-to-date with 'origin/master'.
+
+c:\Python27\repo>ls
+'ls' is not recognized as an internal or external command,
+operable program or batch file.
+
+c:\Python27\repo>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 78E4-864A
+
+ Directory of c:\Python27\repo
+
+10/18/2017  04:17 PM    <DIR>          .
+10/18/2017  04:17 PM    <DIR>          ..
+10/18/2017  04:17 PM             2,117 CondaInstallerHistory.txt
+10/18/2017  04:17 PM             1,536 hough.txt
+10/18/2017  04:17 PM                13 joe.txt
+               3 File(s)          3,666 bytes
+               2 Dir(s)  128,511,483,904 bytes free
+
+c:\Python27\repo>copy ..\test1.py ..\test2.py
+Overwrite ..\test2.py? (Yes/No/All): n
+        0 file(s) copied.
+
+c:\Python27\repo>copy ..\test1.py
+        1 file(s) copied.
+
+c:\Python27\repo>copy ..\test2.py
+        1 file(s) copied.
+
+c:\Python27\repo>git add test1.py test2.py
+
+c:\Python27\repo>git commit
+Aborting commit due to empty commit message.
+
+c:\Python27\repo>git commit  -n "added cv2 scripts "
+error: pathspec 'added cv2 scripts ' did not match any file(s) known to git.
+
+c:\Python27\repo>git commit  -m "added cv2 scripts "
+[master e236aff] added cv2 scripts
+ 2 files changed, 46 insertions(+)
+ create mode 100644 test1.py
+ create mode 100644 test2.py
+
+c:\Python27\repo>git push origin master
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 556 bytes | 556.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/G00329625/Project.git
+   177713e..e236aff  master -> master
+
+c:\Python27\repo>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 78E4-864A
+
+ Directory of c:\Python27\repo
+
+10/18/2017  04:18 PM    <DIR>          .
+10/18/2017  04:18 PM    <DIR>          ..
+10/18/2017  04:17 PM             2,117 CondaInstallerHistory.txt
+10/18/2017  04:17 PM             1,536 hough.txt
+10/18/2017  04:17 PM                13 joe.txt
+10/18/2017  03:31 PM               507 test1.py
+10/18/2017  03:31 PM               507 test2.py
+               5 File(s)          4,680 bytes
+               2 Dir(s)  128,511,725,568 bytes free
+
+c:\Python27\repo>copy ..\np.jpg
+        1 file(s) copied.
+
+c:\Python27\repo>git add np.jpg
+
+c:\Python27\repo>git commit  -m "added np image "
+[master 4a938a3] added np image
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 np.jpg
+
+c:\Python27\repo>git push origin master
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 9.31 KiB | 9.31 MiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/G00329625/Project.git
+   e236aff..4a938a3  master -> master
+
+c:\Python27\repo>
